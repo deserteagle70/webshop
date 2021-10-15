@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>  
+<link rel="stylesheet" href="style.css"> 
+<title>Ürünler</title>
+  
+</head>
+
+<body>
+    <div > <img src="Camer.jpg">
+      <i class="fab fa-twitter" style="margin-left: 900px;"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fas fa-truck"></i>
+      <i class="fas fa-lira-sign"></i></div>
+    <nav class="navbar navbar-expand-lg navbar-light " id="nav">
+        <a class="navbar-brand" href="#" style="color: white;">Çamer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Anasayfa.html" style="color: white;">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ürünler.html" style="color: white;">Ürünler</a>
+            </li>
+            <li class="nav-item">
+                <form id="formid" class="form-inline">
+                    <input id="arama" class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+                    <button id="aramabuton" class="btn btn-light" type="submit">Ara</button>
+                    </form>
+            </li>
+           
+            <li id="Girisdropdown">
+                
+                <div class="btn-group">
+                    
+                    
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i id="resimkullanici" class="far fa-user"></i>
+                        Giriş yap veya üye ol
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="Giris.html">Giriş</a>      
+                      <a class="dropdown-item" href="KayitOl.html">Üye Ol</a>
+                      <a class="dropdown-item" href="siparislerim.html">Siparişlerim</a>
+                      
+                  </div>
+            </li>
+            
+            
+          </ul>
+          
+          
+        </div>
+      </nav>
+      <div>
+        <table>
+           <tr>
+               <th>Zeytin</th> 
+               <th>Kiraz</th>
+               <th>Ceviz</th>
+             </tr>
+             <tr>
+               <td>25 tl</td>
+               <td>25 tl</td>
+               <td>25 tl</td>
+             </tr>
+        </table>
+    </div>
+      
+     <div class="container">
+      <form action="">
+         <img src="zeytin.jpg" style=" width:700px; height: 400px"> zeytin<button class="btn btn-primary butonekleme" type="submit" id="zeytinEkleme"><i class="fas fa-plus"></i></button>
+         <img src="kiraz.jpg"style=" width:700px; height: 400px" > kiraz <button class="btn btn-primary" type="submit" id="kirazEkleme"><i class="fas fa-plus"></i></button>  
+         <img src="ceviz.jpg"style=" width:700px; height: 400px"> ceviz <button class="btn btn-primary" type="submit" id="cevizEkleme"><i class="fas fa-plus"></i></button>
+        </form>   
+     </div>
+    
+     <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+                 
+       <script src="kullanicikontrol.js"></script>       
+    
+</body>
+</html>
